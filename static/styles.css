@@ -1,0 +1,4 @@
+/* Fix WaterCSS box-sizing bug */
+input {
+  box-sizing: border-box;
+}
