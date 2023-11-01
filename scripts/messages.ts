@@ -24,8 +24,8 @@ export const messageFormats = {
     }\n\nGiven that you have obviously spent a long time cultivating your following, I thought it pertinent to inform you that your video has been stolen by this \u2018reactor\u2019 / freebooter so you can take the steps necessary to file a copyright claim, should you desire.\n\nHave a good rest of your day!`
   },
   charlie(reactionVideo, originalVideo) {
-    return `Hello ${
-      originalVideo.creator || 'creator'
+    return `Hello${
+      originalVideo.creator ? ` ${originalVideo.creator}` : ''
     },\n\nI am writing to let you know that popular reaction YouTuber SSSniperwolf has used your video${
       originalVideo.url ? ` '${originalVideo.url}'` : ''
     } in one of her videos${
