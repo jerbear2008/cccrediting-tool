@@ -1,4 +1,4 @@
-import { produce } from 'npm:immer'
+import { produce } from "https://esm.sh/immer@10.0.3"
 import { useId } from 'preact/hooks'
 import { FormattingInput } from './FormattingInput.tsx'
 import { extractUsername, formatVideo } from '../scripts/formatters.ts'
